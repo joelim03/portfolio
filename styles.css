@@ -357,6 +357,36 @@ form textarea{
     header{
         padding: 18px 4%;
     }
+    #menu-icon{
+        display: initial;
+        color: var(--text-color);
+    }
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        background: var(--bg-color);
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+        transition: 0.2s ease;
+        text-align: center;
+    }
+    .navbar.active{
+        top: 100%;
+        display: block;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        background: var(--bg-color)
+    }
+    #darkmode{
+        position: absolute;
+        top: 1.4rem;
+        right: 2rem;
+    }
     section{
         padding: 50px 4%;
     }   
@@ -374,35 +404,6 @@ form textarea{
     }
     header{
         padding: 11px 4%;
-    }
-    #menu-icon{
-        display: initial;
-        color: var(--text-color);
-    }
-    header.navbar{
-        position: absolute;
-        top: -500px;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--bg-color);
-        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
-        transition: 0.2s ease;
-        text-align: center;
-    }
-    .navbar.active{
-        top: 100%;
-    }
-    .navbar a{
-        padding: 1.5rem;
-        display: block;
-        background: var(--bg-color)
-    }
-    #darkmode{
-        position: absolute;
-        top: 1.4rem;
-        right: 2rem;
     }
     .scroll-down{
         display: none;
